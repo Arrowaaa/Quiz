@@ -33,7 +33,7 @@ namespace Quiz
                 new Question("Quem descobriu a penicilina?",
                              new List<string> { "Alexander Fleming", "Marie Curie", "Isaac Newton", "Albert Einstein" }, 1),
                 new Question("Quantos continentes existem?",
-                             new List<string> { "5", "6", "7", "8" }, 3)
+                             new List<string> { "5", "6", "7", "8" }, 2)
             };
         }
 
