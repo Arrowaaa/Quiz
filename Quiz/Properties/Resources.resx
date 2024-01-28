@@ -118,22 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="estrutura-penicilina" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estrutura-penicilina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2000px-penicillin_core-svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2000px-penicillin_core-svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Terra-planeta-água" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Terra-planeta-água.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2000px-penicillin_core-svg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2000px-penicillin_core-svg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Terra-planeta-água" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Terra-planeta-água.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stock-vector-neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-design-element-colorful-modern-1722883588" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stock-vector-neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-design-element-colorful-modern-1722883588.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sddefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sddefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1000_F_256640090_TbObu1LJypa5vAa2l1ti88DKXylmKxse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1000_F_256640090_TbObu1LJypa5vAa2l1ti88DKXylmKxse.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1000_F_434292902_5e5dFMkx6TfjRBDoJXqRyiNShhQ07RY2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1000_F_434292902_5e5dFMkx6TfjRBDoJXqRyiNShhQ07RY2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stock-vector-neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-design-element-colorful-modern-17228835881" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stock-vector-neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-design-element-colorful-modern-1722883588.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

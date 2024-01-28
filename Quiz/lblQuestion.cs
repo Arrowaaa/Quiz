@@ -13,23 +13,23 @@ namespace Quiz
 {
     public partial class lblQuestion : Form
     {
-        private List<Question> questions;
-        private int currentQuestion;
-        private int score;
+        private List<Question> Alternativas;
+        private int Acertos;
+        private int Pontos;
 
         public lblQuestion()
         {
             InitializeComponent();
             InitializeQuestions();
-            currentQuestion = 0;
-            score = 0;
-            ShowQuestion(currentQuestion);
+            Acertos = 0;
+            Pontos = 0;
+            Perguntas(Acertos);
         }
 
 
         private void InitializeQuestions()
         {
-            questions = new List<Question>
+            Alternativas = new List<Question>
             {
                 new Question("Qual é a capital da França?",
                              new List<string> { "Madri", "Berlim", "Paris", "Londres" }, 3),
@@ -82,21 +82,21 @@ namespace Quiz
             };
         }
 
-        private void ShowQuestion(int questionNumber)
+        private void Perguntas(int questionNumber)
         {
-            if (questionNumber < questions.Count)
+            if (questionNumber < Alternativas.Count)
             {
-                Question question = questions[questionNumber];
+                Question question = Alternativas[questionNumber];
                 lblQuestionn.Text = question.QuestionText;
-                radioButton1.Text = question.Choices[0];
-                radioButton2.Text = question.Choices[1];
-                radioButton3.Text = question.Choices[2];
-                radioButton4.Text = question.Choices[3];
+                radioButton1.Text = question.Escolhas[0];
+                radioButton2.Text = question.Escolhas[1];
+                radioButton3.Text = question.Escolhas[2];
+                radioButton4.Text = question.Escolhas[3];
             }
             else
             {
                
-                ScoreForm scoreForm = new ScoreForm(score, questions.Count);
+                ScoreForm scoreForm = new ScoreForm(Pontos, Alternativas.Count);
                 scoreForm.ShowDialog();
             }
         }
@@ -114,13 +114,13 @@ namespace Quiz
         public class Question
         {
             public string QuestionText { get; set; }
-            public List<string> Choices { get; set; }
+            public List<string> Escolhas { get; set; }
             public int CorrectAnswer { get; set; }
 
             public Question(string questionText, List<string> choices, int correctAnswer)
             {
                 QuestionText = questionText;
-                Choices = choices;
+                Escolhas = choices;
                 CorrectAnswer = correctAnswer;
             }
         }
@@ -133,16 +133,16 @@ namespace Quiz
             if (selectedAnswer > 0)
             {
                 // Verifica se a resposta selecionada está correta
-                if (selectedAnswer == questions[currentQuestion].CorrectAnswer)
+                if (selectedAnswer == Alternativas[Acertos].CorrectAnswer)
                 {
-                    score++; // Incrementa a pontuação se a resposta estiver correta
+                    Pontos++; // Incrementa a pontuação se a resposta estiver correta
                 }
 
                 // Avança para a próxima pergunta
-                currentQuestion++;
+                Acertos++;
 
                 // Exibe a próxima pergunta ou mostra a pontuação final se todas as perguntas foram respondidas
-                ShowQuestion(currentQuestion);
+                Perguntas(Acertos);
             }
           
         }
@@ -151,20 +151,20 @@ namespace Quiz
 
     public partial class ScoreForm : Form
     {
-        private int finalScore;
-        private int totalQuestions;
+        private int Pontuacaofinal;
+        private int totaldeperguntas;
 
-        public ScoreForm(int score, int total)
+        public ScoreForm(int Pontos, int total)
         {
             InitializeComponent();
-            finalScore = score;
-            totalQuestions = total;
+            Pontuacaofinal = Pontos;
+            totaldeperguntas = total;
             DisplayScore();
         }
 
         private void DisplayScore()
         {
-            lblScore.Text = ("Pontuação Final é: "  + finalScore + "/" + totalQuestions);
+            lblScore.Text = ("Pontuação Final é: "  + Pontuacaofinal + "/" + totaldeperguntas);
         }
     }
 }

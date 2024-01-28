@@ -125,5 +125,17 @@
   <ItemGroup>
     <None Include="Resources\images.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-design-element-colorful-modern-1722883588.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_256640090_TbObu1LJypa5vAa2l1ti88DKXylmKxse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_434292902_5e5dFMkx6TfjRBDoJXqRyiNShhQ07RY2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
