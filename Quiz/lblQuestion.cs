@@ -61,6 +61,7 @@ namespace Quiz
                                  "Valor da Temperatura no final de semana", 
                                  "Valor matemático de Pi", 
                                  "Distância da Terra à Lua" }, 3),
+
                 new Question("Qual dos seguintes itens mostra um laço for (para) escrito corretamente?",
                              new List<string> { "para (con = 1; con <= 10; con++) { instruções }", 
                                  "para (con = 10; con >= 1; con++) { instruções }",
