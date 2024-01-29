@@ -18,9 +18,11 @@ namespace Quiz
         private int Pontos;
 
         public lblQuestion()
-        {
-            InitializeComponent();
-            InitializeQuestions();
+        {//Este método é chamado quando um objeto desta classe é criado. Ele inicializa os componentes, inicializa as perguntas,
+         //define acertos e pontos como zero e chama o método Perguntas() para exibir a primeira pergunta.
+
+            InitializeComponent(); // Método gerado automaticamente que inicializa os componentes do formulário.
+            InitializeQuestions(); //Método privado que inicializa a lista de perguntas com perguntas e respostas.
             Acertos = 0;
             Pontos = 0;
             Perguntas(Acertos);
@@ -28,7 +30,9 @@ namespace Quiz
 
 
         private void InitializeQuestions()
-        {
+        { //Método privado que inicializa a lista de perguntas com várias instâncias da classe Question.
+          //Cada instância representa uma pergunta com suas opções de resposta e a resposta correta.
+
             Alternativas = new List<Question>
             {
                 new Question("Qual é a capital da França?",
@@ -83,6 +87,7 @@ namespace Quiz
         }
 
         private void Perguntas(int questionNumber)
+        // Método privado que exibe a próxima pergunta na interface gráfica com base no número da pergunta recebido como argumento.
         {
             if (questionNumber < Alternativas.Count)
             {
@@ -92,6 +97,7 @@ namespace Quiz
                 radioButton2.Text = question.Escolhas[1];
                 radioButton3.Text = question.Escolhas[2];
                 radioButton4.Text = question.Escolhas[3];
+                
             }
             else
             {
@@ -103,7 +109,9 @@ namespace Quiz
 
         
         private int GetSelectedAnswer()
-        {
+        { //Método privado que verifica qual opção de resposta foi selecionada pelo usuário e retorna o número correspondente
+          //à opção selecionada(1 para a primeira opção, 2 para a segunda e assim por diante). Retorna 0 se nenhuma opção foi selecionada.
+
             if (radioButton1.Checked) return 1;
             else if (radioButton2.Checked) return 2;
             else if (radioButton3.Checked) return 3;
@@ -112,28 +120,31 @@ namespace Quiz
         }
 
         public class Question
-        {
+        { //Ela tem um getter (get) e um setter (set) automáticos.
+          //Isso significa que você pode acessar o valor da propriedade usando QuestionText e atribuir um novo valor a ela.
             public string QuestionText { get; set; }
             public List<string> Escolhas { get; set; }
-            public int CorrectAnswer { get; set; }
+            public int Correta { get; set; }
 
-            public Question(string questionText, List<string> choices, int correctAnswer)
+            public Question(string questionText, List<string> choices, int Respostacorreta)
             {
-                QuestionText = questionText;
-                Escolhas = choices;
-                CorrectAnswer = correctAnswer;
+                QuestionText = questionText; // Propriedade que armazena as perguntas.
+                Escolhas = choices; //Propriedade que armazena as escolhas.
+                Correta = Respostacorreta; // Propriedade que armazena o índice da resposta correta.
             }
         }
 
         private void btnnNext_Click_Click(object sender, EventArgs e)
         {
             // Verifica se uma opção foi selecionada
+            //(SelectedAnswer) Variavel que será usada para armazenar a opção de resposta selecionada pelo usuário.
+            //GetSelectedAnswer para determinar qual opção de resposta foi selecionada pelo usuário.
             int selectedAnswer = GetSelectedAnswer();
 
             if (selectedAnswer > 0)
             {
                 // Verifica se a resposta selecionada está correta
-                if (selectedAnswer == Alternativas[Acertos].CorrectAnswer)
+                if (selectedAnswer == Alternativas[Acertos].Correta)
                 {
                     Pontos++; // Incrementa a pontuação se a resposta estiver correta
                 }
@@ -159,7 +170,7 @@ namespace Quiz
             InitializeComponent();
             Pontuacaofinal = Pontos;
             totaldeperguntas = total;
-            DisplayScore();
+            DisplayScore(); //garante que a pontuação final seja exibida assim que o formulário.
         }
 
         private void DisplayScore()
