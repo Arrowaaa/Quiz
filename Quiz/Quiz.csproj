@@ -46,23 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="lblQuestion2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="lblQuestion2.Designer.cs">
-      <DependentUpon>lblQuestion2.cs</DependentUpon>
-    </Compile>
     <Compile Include="lblQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="lblQuestion.Designer.cs">
       <DependentUpon>lblQuestion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="lblQuestion3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="lblQuestion3.Designer.cs">
-      <DependentUpon>lblQuestion3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,12 +62,6 @@
     </Compile>
     <EmbeddedResource Include="lblQuestion.resx">
       <DependentUpon>lblQuestion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="lblQuestion2.resx">
-      <DependentUpon>lblQuestion2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="lblQuestion3.resx">
-      <DependentUpon>lblQuestion3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +106,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-design-element-colorful-modern-1722883588.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_256640090_TbObu1LJypa5vAa2l1ti88DKXylmKxse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_434292902_5e5dFMkx6TfjRBDoJXqRyiNShhQ07RY2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

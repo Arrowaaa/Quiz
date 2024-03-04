@@ -114,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quiz.Properties.Resources.sddefault;
+            this.BackgroundImage = global::Quiz.Properties.Resources.stock_vector_neon_quiz_sign_vector_design_template_quiz_neon_frame_light_banner_design_element_colorful_modern_17228835881;
             this.ClientSize = new System.Drawing.Size(643, 450);
             this.Controls.Add(this.btnnNext_Click);
             this.Controls.Add(this.lblQuestionn);

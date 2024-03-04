@@ -63,6 +63,26 @@ namespace Quiz.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_256640090_TbObu1LJypa5vAa2l1ti88DKXylmKxse {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_256640090_TbObu1LJypa5vAa2l1ti88DKXylmKxse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_434292902_5e5dFMkx6TfjRBDoJXqRyiNShhQ07RY2 {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_434292902_5e5dFMkx6TfjRBDoJXqRyiNShhQ07RY2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2000px_penicillin_core_svg {
             get {
                 object obj = ResourceManager.GetObject("2000px-penicillin_core-svg", resourceCulture);
@@ -103,9 +123,41 @@ namespace Quiz.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sddefault {
             get {
                 object obj = ResourceManager.GetObject("sddefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stock_vector_neon_quiz_sign_vector_design_template_quiz_neon_frame_light_banner_design_element_colorful_modern_1722883588 {
+            get {
+                object obj = ResourceManager.GetObject("stock-vector-neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-d" +
+                        "esign-element-colorful-modern-1722883588", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stock_vector_neon_quiz_sign_vector_design_template_quiz_neon_frame_light_banner_design_element_colorful_modern_17228835881 {
+            get {
+                object obj = ResourceManager.GetObject("stock-vector-neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-d" +
+                        "esign-element-colorful-modern-17228835881", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
