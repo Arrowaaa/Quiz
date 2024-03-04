@@ -28,8 +28,6 @@ C:\Users\mad_f\Source\Repos\Quiz\Quiz\bin\Debug\Quiz.exe
 C:\Users\mad_f\Source\Repos\Quiz\Quiz\bin\Debug\Quiz.pdb
 C:\Users\mad_f\Source\Repos\Quiz\Quiz\obj\Debug\Quiz.csproj.AssemblyReference.cache
 C:\Users\mad_f\Source\Repos\Quiz\Quiz\obj\Debug\Quiz.lblQuestion.resources
-C:\Users\mad_f\Source\Repos\Quiz\Quiz\obj\Debug\Quiz.lblQuestion2.resources
-C:\Users\mad_f\Source\Repos\Quiz\Quiz\obj\Debug\Quiz.lblQuestion3.resources
 C:\Users\mad_f\Source\Repos\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
 C:\Users\mad_f\Source\Repos\Quiz\Quiz\obj\Debug\Quiz.ScoreForm.resources
 C:\Users\mad_f\Source\Repos\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.cache
@@ -47,3 +45,14 @@ C:\Users\edilson.csilva10\source\repos\Quiz\Melhorias do Quiz\Quiz\obj\Debug\Qui
 C:\Users\edilson.csilva10\source\repos\Quiz\Melhorias do Quiz\Quiz\obj\Debug\Quiz.csproj.CoreCompileInputs.cache
 C:\Users\edilson.csilva10\source\repos\Quiz\Melhorias do Quiz\Quiz\obj\Debug\Quiz.exe
 C:\Users\edilson.csilva10\source\repos\Quiz\Melhorias do Quiz\Quiz\obj\Debug\Quiz.pdb
+C:\Users\mad_f\source\repos\Qui\Quiz\obj\Debug\Quiz.csproj.AssemblyReference.cache
+C:\Users\mad_f\source\repos\Qui\Quiz\obj\Debug\Quiz.lblQuestion.resources
+C:\Users\mad_f\source\repos\Qui\Quiz\obj\Debug\Quiz.Properties.Resources.resources
+C:\Users\mad_f\source\repos\Qui\Quiz\obj\Debug\Quiz.ScoreForm.resources
+C:\Users\mad_f\source\repos\Qui\Quiz\obj\Debug\Quiz.csproj.GenerateResource.cache
+C:\Users\mad_f\source\repos\Qui\Quiz\obj\Debug\Quiz.csproj.CoreCompileInputs.cache
+C:\Users\mad_f\source\repos\Qui\Quiz\obj\Debug\Quiz.exe
+C:\Users\mad_f\source\repos\Qui\Quiz\obj\Debug\Quiz.pdb
+C:\Users\mad_f\source\repos\Qui\Quiz\bin\Debug\Quiz.exe.config
+C:\Users\mad_f\source\repos\Qui\Quiz\bin\Debug\Quiz.exe
+C:\Users\mad_f\source\repos\Qui\Quiz\bin\Debug\Quiz.pdb
