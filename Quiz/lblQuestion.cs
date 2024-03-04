@@ -36,55 +36,70 @@ namespace Quiz
             Alternativas = new List<Question>
             {
                 new Question("Qual é a capital da França?",
-                             new List<string> { "Madri", "Berlim", "Paris", "Londres" }, 3),
+                             new List<string> { "Madri", "Berlim", "Paris", "Londres" },
+                             new List<int> { 3 }),
 
-                new Question("Quem descobriu a penicilina?",
-                             new List<string> { "Alexander Fleming", "Marie Curie", "Isaac Newton", "Albert Einstein" }, 1),
+                 new Question("Qual é a capital da França?",
+                            new List<string> { "Madri", "Berlim", "Paris", "Londres" },
+                            new List<int> { 3 }),
 
-                new Question("Quantos continentes existem?",
-                             new List<string> { "5", "6", "7", "8" }, 2),
+                 new Question("Quem descobriu a penicilina?",
+                            new List<string> { "Alexander Fleming", "Marie Curie", "Isaac Newton", "Albert Einstein" },
+                            new List<int> { 1 }),
 
-                new Question("Qual dos seguintes é um operador de concatenação de strings válido?",
-                             new List<string> { "+", "*", "→", "” “" }, 1),
+                 new Question("Quantos continentes existem?",
+                            new List<string> { "5", "6", "7", "8" },
+                            new List<int> { 2 }),
 
-                new Question("Para que serve uma biblioteca?",
-                             new List<string> { "Para que os usuários possam consultar e tomar emprestados livros de assuntos variados",
-                                 "Para que os programadores possam consultar a documentação da linguagem com facilidade", 
-                                 "Uma biblioteca é um arquivo que organiza código pré-definido para o uso em aplicações", 
-                                 "Para modularizar o desenvolvimento de estruturas de comparação e repetição" }, 3),
+                 new Question("Qual dos seguintes é um operador de concatenação de strings válido?",
+                            new List<string> { "+", "*", "→", "” “" },
+                            new List<int> { 1 }),
 
-                new Question("Qual dos seguintes itens possui apenas tipos válidos usados em lógica de programação (tipos primitivos)?",
-                             new List<string> { "Inteiro, Temporal, Caractere, Double",
-                                 "Booleano, Real, Inteiro", 
-                                 "Irracional, Inteiro, Booleano, Tipografia, Double", 
-                                 "Inteiro, Booleano, Caractere, Double" }
-                             , 4),
+                 new Question("Para que serve uma biblioteca em programação?",
+                            new List<string> { "Para que os usuários possam consultar e tomar emprestados livros de assuntos variados",
+                            "Para que os programadores possam consultar a documentação da linguagem com facilidade",
+                            "Uma biblioteca é um arquivo que organiza código pré-definido para o uso em aplicações",
+                            "Para modularizar o desenvolvimento de estruturas de comparação e repetição" },
+                            new List<int> { 3 }),
 
-                new Question("Qual dos seguintes itens é melhor representado por um valor constante em um algoritmo?",
-                             new List<string> { "Salário de um Funcionário", 
-                                 "Valor da Temperatura no final de semana", 
-                                 "Valor matemático de Pi", 
-                                 "Distância da Terra à Lua" }, 3),
+                 new Question("Qual dos seguintes itens possui apenas tipos válidos usados em lógica de programação (tipos primitivos)?",
+                            new List<string> { "Inteiro, Temporal, Caractere, Double",
+                            "Booleano, Real, Inteiro",
+                            "Irracional, Inteiro, Booleano, Tipografia, Double",
+                            "Inteiro, Booleano, Caractere, Double" },
+                            new List<int> { 4 }),
 
-                new Question("Qual dos seguintes itens mostra um laço for (para) escrito corretamente?",
-                             new List<string> { "para (con = 1; con <= 10; con++) { instruções }", 
-                                 "para (con = 10; con >= 1; con++) { instruções }",
-                                 "para (con == 10; con > 1; con–) { instruções }", 
-                                 "para (con = 1; con < 10; con–) { instruções }" }, 1),
+                 new Question("Qual dos seguintes itens é melhor representado por um valor constante em um algoritmo?",
+                            new List<string> { "Salário de um Funcionário",
+                            "Valor da Temperatura no final de semana",
+                            "Valor matemático de Pi",
+                            "Distância da Terra à Lua" },
+                            new List<int> { 3 }),
 
-                new Question("O que é uma Variável?",
-                             new List<string> { "Local na memória CMOS do computador empregado para armazenar de forma temporária os dados que são utilizados pelo programa.", 
-                                 "Local na memória RAM do computador utilizado para armazenar temporariamente dados que são utilizados pelo programa.", 
-                                 "Valor que varia conforme passa o tempo, sendo sempre modificado conforme o programa vai sendo executado.", 
-                                 "Estado lógico de uma constante, que pode variar entre verdadeiro e falso" }, 2),
-                
-                new Question(" Como funciona um laço while (enquanto)?",
-                             new List<string> { "Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar falso.", 
-                                 "Um laço while não repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro.",
-                                 "Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro", 
-                                 "Um laço while espera enquanto o usuário não pressiona uma tecla para decidir qual caminho tomar no fluxo do algoritmo" }, 3),
+                 new Question("Qual dos seguintes itens mostra um laço for (para) escrito corretamente?",
+                            new List<string> { "for (con = 1; con <= 10; con++) { instruções }",
+                            "for (con = 10; con >= 1; con++) { instruções }",
+                            "for (con == 10; con > 1; con–) { instruções }",
+                            "for (con = 1; con < 10; con–) { instruções }" },
+                            new List<int> { 1, 4 }),
+
+                 new Question("O que é uma Variável?",
+                            new List<string> { "Local na memória CMOS do computador empregado para armazenar de forma temporária os dados que são utilizados pelo programa.",
+                            "Local na memória RAM do computador utilizado para armazenar temporariamente dados que são utilizados pelo programa.",
+                            "Valor que varia conforme passa o tempo, sendo sempre modificado conforme o programa vai sendo executado.",
+                            "Estado lógico de uma constante, que pode variar entre verdadeiro e falso" },
+                            new List<int> { 2 }),
+
+                 new Question(" Como funciona um laço while (enquanto)?",
+                        new List<string> { "Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar falso.",
+                        "Um laço while não repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro.",
+                        "Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro",
+                        "Um laço while espera enquanto o usuário não pressiona uma tecla para decidir qual caminho tomar no fluxo do algoritmo" },
+                        new List<int> { 3 }),
+
             };
-        }
+
+     }
 
         private void Perguntas(int questionNumber)
         // Método privado que exibe a próxima pergunta na interface gráfica com base no número da pergunta recebido como argumento.
@@ -125,8 +140,9 @@ namespace Quiz
             public string QuestionText { get; set; }
             public List<string> Escolhas { get; set; }
             public int Correta { get; set; }
+            public int RespostaEscolhida { get; set; } // Adicionando a propriedade RespostaEscolhida
 
-            public Question(string questionText, List<string> choices, int Respostacorreta)
+            public Question(string questionText, List<string> choices, List<int> respostasCorretas)
             {
                 QuestionText = questionText; // Propriedade que armazena as perguntas.
                 Escolhas = choices; //Propriedade que armazena as escolhas.
