@@ -110,7 +110,7 @@ namespace Quiz
         
         private int GetSelectedAnswer()
         { //Método privado que verifica qual opção de resposta foi selecionada pelo usuário e retorna o número correspondente
-          //à opção selecionada(1 para a primeira opção, 2 para a segunda e assim por diante). Retorna 0 se nenhuma opção foi selecionada.
+          //à opção selecionada(radiobutton1) indica 1 para a primeira opção, 2 para a segunda e assim por diante). Retorna 0 se nenhuma opção foi selecionada.
 
             if (radioButton1.Checked) return 1;
             else if (radioButton2.Checked) return 2;
@@ -170,7 +170,7 @@ namespace Quiz
             InitializeComponent();
             Pontuacaofinal = Pontos;
             totaldeperguntas = total;
-            DisplayScore(); //garante que a pontuação final seja exibida assim que o formulário.
+            DisplayScore(); //garante que a pontuação final seja exibida.
         }
 
         private void DisplayScore()
