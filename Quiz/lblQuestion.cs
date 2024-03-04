@@ -97,7 +97,8 @@ namespace Quiz
                         new List<int> { 3 }),
 
             };
-        }
+
+     }
 
         private void Perguntas(int questionNumber)
         // Método privado que exibe a próxima pergunta na interface gráfica com base no número da pergunta recebido como argumento.
