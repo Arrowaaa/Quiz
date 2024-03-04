@@ -136,29 +136,40 @@ namespace Quiz
 
         private void btnnNext_Click_Click(object sender, EventArgs e)
         {
-            // Verifica se uma opção foi selecionada
-            //(SelectedAnswer) Variavel que será usada para armazenar a opção de resposta selecionada pelo usuário.
-            //GetSelectedAnswer para determinar qual opção de resposta foi selecionada pelo usuário.
-            int selectedAnswer = GetSelectedAnswer();
+             // Verifica se uma opção foi selecionada
+    int selectedAnswer = GetSelectedAnswer();
 
-            if (selectedAnswer > 0)
+    if (selectedAnswer > 0)
+    {
+        // Confirmar se o usuário está certo da escolha
+        DialogResult confirmResult = MessageBox.Show("Está seguro dessa escolha?", "Confirmação", MessageBoxButtons.YesNo);
+        
+        if (confirmResult == DialogResult.Yes)
+        {
+            // Verifica se a resposta selecionada está correta
+            if (selectedAnswer == Alternativas[Acertos].Correta)
             {
-                // Verifica se a resposta selecionada está correta
-                if (selectedAnswer == Alternativas[Acertos].Correta)
-                {
-                    Pontos++; // Incrementa a pontuação se a resposta estiver correta
-                }
-
-                // Avança para a próxima pergunta
-                Acertos++;
-
-                // Exibe a próxima pergunta ou mostra a pontuação final se todas as perguntas foram respondidas
-                Perguntas(Acertos);
+                Pontos++; // Incrementa a pontuação se a resposta estiver correta
             }
-          
+            else
+            {
+                // Exibir mensagem se a resposta estiver errada
+                MessageBox.Show("Resposta incorreta. A resposta correta é: " + Alternativas[Acertos].Escolhas[Alternativas[Acertos].Correta - 1]);
+            }
+
+            // Avança para a próxima pergunta
+            Acertos++;
+
+            // Exibe a próxima pergunta ou mostra a pontuação final se todas as perguntas foram respondidas
+            Perguntas(Acertos);
+            }
+        }
+    else
+        {
+            MessageBox.Show("Por favor, selecione uma resposta.");
         }
     }
-
+    
 
     public partial class ScoreForm : Form
     {
@@ -176,6 +187,16 @@ namespace Quiz
         private void DisplayScore()
         {
             lblScore.Text = ("Pontuação Final é: "  + Pontuacaofinal + "/" + totaldeperguntas);
+            
+            // Se houve respostas incorretas, exibe qual alternativa foi escolhida e a resposta correta
+    foreach (var question in Alternativas)
+    {
+        if (question.RespostaEscolhida != question.Correta)
+        {
+            MessageBox.Show("Você escolheu a alternativa: " + question.Escolhas[question.RespostaEscolhida - 1] +
+                            ". A resposta correta era: " + question.Escolhas[question.Correta - 1]);
+        }
+    }
         }
     }
 }
